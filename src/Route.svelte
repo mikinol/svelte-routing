@@ -25,8 +25,7 @@
         routeProps = rest;
 
         if (c) {
-            if (c.toString().startsWith("class ")) component = c;
-            else component = c();
+            component = c;
         }
 
         canUseDOM() && !$activeRoute.preserveScroll && window?.scrollTo(0, 0);
